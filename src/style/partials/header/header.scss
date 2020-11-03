@@ -1,0 +1,43 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  box-sizing: border-box;
+  padding: 8px 0;
+  border-bottom: 1px solid $borderGray;
+  background-color: $white;
+
+  .container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 248px;
+
+    &-image {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &-loginBtn {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+    width: 105px;
+    font-weight: $medium;
+    text-decoration: none;
+    color: $btnBlue;
+    border: 1px solid $btnBlue;
+    border-radius: 15px;
+  }
+}

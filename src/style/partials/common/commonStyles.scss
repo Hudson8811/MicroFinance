@@ -1,0 +1,31 @@
+* {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: $normalText;
+  font-weight: $regular;
+  color: $dark;
+  background-color: $white;
+}
+
+.container {
+  position: relative;
+  width: 98%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.btn {
+  &:hover {
+    opacity: 0.7;
+  }
+}
