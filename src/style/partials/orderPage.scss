@@ -1,0 +1,201 @@
+.order {
+  box-sizing: border-box;
+  width: 98%;
+  max-width: 828px;
+  padding: 58px 0 100px;
+  margin: 0 auto;
+
+  .bannerBlock-ui-inputWrapper {
+    max-width: 545px;
+    margin: 40px auto 34px;
+  }
+
+  .bannerBlock-ui-btn {
+    margin: 40px auto 0;
+  }
+
+  .sectionTitle {
+    text-align: center;
+  }
+
+  &-step {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    font-size: $sliderText;
+    line-height: $infoLineHeight;
+    font-weight: $medium;
+    color: $btnBlue;
+  }
+
+  &-approbation {
+    margin-top: 18px;
+
+    &-text {
+      display: block;
+      text-align: center;
+      font-size: $normalText;
+      line-height: $infoLineHeight;
+      font-weight: $medium;
+      color: $btnBlue;
+    }
+
+    &-wrapper {
+      position: relative;
+      display: block;
+      height: 10px;
+      width: 100%;
+      border-radius: 5px;
+      background-color: $sliderColor;
+    }
+
+    &-slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      height: 10px;
+      background: linear-gradient(to left, $btnBlue, $purpul);
+    }
+  }
+
+  &-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    &-subtitle {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin-bottom: 25px;
+      font-size: $bigText;
+      line-height: $infoLineHeight;
+      font-weight: $medium;
+    }
+  }
+
+  &-label {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &-50 {
+      width: calc(50% - 15px);
+    }
+
+    &-33 {
+      width: calc(33.333333% - 34px / 3);
+    }
+
+    &-title {
+      font-size: $normalText;
+      line-height: $infoLineHeight;
+    }
+
+    &-subtitle {
+      font-size: $extraSmallText2;
+      line-height: $infoLineHeight;
+      color: $orderLabGray;
+    }
+  }
+
+  &-inputbox {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    padding: 2px 14px;
+    margin: 0;
+    font-size: $normalTextBac;
+    font-weight: $regular;
+    line-height: $infoLineHeight;
+    color: $dark;
+    appearance: none;
+    border: 1px solid $borderGray3;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &-select {
+    background: calc(100% - 10px) center / auto url(../img/selectArrow.png) no-repeat;
+  }
+
+  &-polic {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 8px;
+
+    &-label {
+      display: block;
+      height: 25px;
+      width: 25px;
+      margin-right: 10px;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+
+    &-input {
+      display: none;
+
+      &:checked + b {
+        border-color: $btnBlue;
+
+        background: center / auto url(../img/check.png) no-repeat;
+      }
+    }
+
+    &-inputbox {
+      display: block;
+      box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+      border: 1px solid $borderGray3;
+      border-radius: 5px;
+    }
+
+    &-texts {
+      p {
+        &:first-child {
+          display: block;
+          font-size: $extraSmallText;
+          line-height: $orderLink;
+          color: $dark;
+        }
+
+        &:last-child {
+          display: block;
+          font-size: $extraSmallText2;
+          line-height: $bannerIconHeight;
+          color: $orderLabGray;
+        }
+      }
+    }
+
+    &-link {
+      font-size: $extraSmallText;
+      line-height: $orderLink;
+      color: $dark;
+    }
+  }
+
+  &-bacStep {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: $bigBtn;
+    line-height: $infoLineHeight;
+    font-weight: $medium;
+    text-decoration: underline;
+    color: $btnBlue;
+  }
+}
+
+.order.order-step2 {
+  padding-bottom: 170px;
+}

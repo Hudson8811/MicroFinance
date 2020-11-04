@@ -1,0 +1,324 @@
+.personal {
+  padding: 17px 0;
+  background-color: $btnBlue;
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: $extraSmallText;
+    line-height: $infoLineHeight;
+    font-weight: $medium;
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    & + & {
+      margin-left: 44px;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      flex-shrink: 0;
+    }
+
+    &-user {
+      &:before {
+        height: 16px;
+        width: 16px;
+        margin-right: 8px;
+        background: center / auto url(../img/user.png) no-repeat;
+      }
+    }
+
+    &-star {
+      &:before {
+        height: 20px;
+        width: 20px;
+        margin-right: 7px;
+        background: center / auto url(../img/star.png) no-repeat;
+      }
+    }
+  }
+}
+
+.suggestions {
+  &-item {
+    &-content {
+      display: none;
+
+      &--active {
+        display: block;
+      }
+    }
+
+    &-title {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 16px 30px;
+      border: 1px solid $btnBlue;
+      background-color: $faqbg;
+    }
+
+    &-col {
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 20%;
+      max-width: 183px;
+      padding: 0 20px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &-subheading {
+      display: block;
+      font-size: $extraSmallText2;
+      line-height: $bannerIconHeight;
+      color: $orderLabGray;
+    }
+
+    &-heading {
+      display: block;
+      font-size: $bigBtn;
+      line-height: $bannerIconHeight;
+      color: $howWorksTitle;
+    }
+  }
+
+  &-content {
+    padding: 47px 0 100px;
+
+    .sectionTitle {
+      margin-bottom: 40px;
+    }
+  }
+
+  &-more {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    font-size: $normalText;
+    line-height: $infoLineHeight;
+    font-weight: $medium;
+    text-decoration: none;
+    border-radius: 18px;
+    color: $white;
+    background-color: $btnBlue;
+
+    &--active {
+      display: flex;
+    }
+  }
+
+  &-subitem {
+    box-sizing: border-box;
+    border-bottom: 1px solid $borderGray2;
+
+    &-title {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 16px 30px;
+    }
+
+    &-col {
+      display: flex;
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0 20px;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &:first-child {
+        width: 323px;
+      }
+
+      &:nth-child(2) {
+        width: 200px;
+      }
+
+      &:nth-child(3) {
+        width: 120px;
+      }
+
+      &:nth-child(4) {
+        width: 160px;
+      }
+
+      &:last-child {
+        width: 185px;
+      }
+    }
+
+    &-heading {
+      display: block;
+      font-size: $normalTextBac;
+      line-height: $bannerIconHeight;
+      font-weight: $medium;
+      color: $howWorksTitle;
+
+      &--green {
+        color: $green;
+      }
+    }
+
+    &-content {
+      display: none;
+      box-sizing: border-box;
+      padding: 30px;
+      margin-bottom: 20px;
+      background-color: $faqbg;
+
+      &--active {
+        display: block;
+      }
+
+      p {
+        display: block;
+        margin-top: 25px;
+        font-size: $normalTextBac;
+        line-height: $bannerIconHeight;
+        color: $grayText;
+      }
+
+      &-row {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        align-items: stretch;
+        border-bottom: 1px solid $borderGray2;
+      }
+
+      &-col {
+        box-sizing: border-box;
+        padding: 20px;
+
+        &:first-child {
+          width: 130px;
+          padding-left: 0;
+        }
+
+        &:nth-child(2) {
+          width: 120px;
+        }
+
+        &:nth-child(3) {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-right: auto;
+        }
+
+        &:last-child {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 185px;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  &-submore {
+    display: none;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    font-size: $normalText;
+    font-weight: $medium;
+    text-decoration: none;
+    color: $btnBlue;
+    border: 1px solid $btnBlue;
+    border-radius: 18px;
+
+    &--active {
+      display: flex;
+    }
+  }
+
+  &-pay-link {
+    margin-left: 15px;
+    text-decoration: none;
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    font-size: $normalText;
+    font-weight: $medium;
+    color: $white;
+    text-decoration: none;
+    background: linear-gradient(to left, $btnBlue, $purpul);
+    border-radius: 18px;
+  }
+
+  &-pag {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: 30px;
+
+    &-item {
+      height: 50px;
+      width: 50px;
+      margin-right: 9px;
+    }
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      font-size: $bigBtn;
+      font-weight: $regular;
+      text-decoration: none;
+      color: $btnBlue;
+      border: 1px solid $btnBlue;
+      border-radius: 5px;
+
+      &--active {
+        font-weight: $bold;
+        background-color: $faqbg;
+      }
+    }
+  }
+}

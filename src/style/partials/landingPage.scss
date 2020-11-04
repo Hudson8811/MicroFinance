@@ -1,0 +1,351 @@
+.bannerBlock {
+  padding-bottom: 76px;
+  background: center bottom / 1920px auto url(../img/mainBannerBg.png) no-repeat;
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &-imageWrapper {
+    padding-top: 15px;
+  }
+
+  &-image {
+    display: block;
+    width: 100%;
+  }
+
+  &-content {
+    padding-top: 56px;
+    margin-left: 50px;
+    width: 80%;
+    max-width: 648px;
+  }
+
+  &-form {
+    box-sizing: border-box;
+    padding: 50px 52px 37px;
+    margin: 24px 0 48px;
+    border-radius: 10px;
+    border: 1px solid $borderGray2;
+    background-color: $white;
+    box-shadow: 0 17px 46px rgba(53, 28, 28, 0.18);
+
+    &-title {
+      display: block;
+      text-align: center;
+      margin-bottom: 16px;
+      font-size: $infoText;
+      line-height: $infoLineHeight;
+    }
+  }
+
+  &-ui {
+    &-inputWrapper {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+      width: 100%;
+      margin-bottom: 34px;
+      border: 1px solid $borderGray3;
+      border-radius: 5px;
+      background-color: $noWhite;
+    }
+
+    &-input {
+      display: block;
+      text-align: right;
+      padding: 0;
+      padding-right: 5px;
+      margin: 0;
+      width: 80px;
+      font-size: $sliderText;
+      line-height: $infoLineHeight;
+      background-color: transparent;
+      border: none;
+      color: $dark;
+    }
+
+    &-title {
+      display: block;
+      font-size: $sliderText;
+      line-height: $infoLineHeight;
+      color: $dark;
+    }
+
+    &-desc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 19px;
+
+      &-item {
+        display: block;
+        font-size: $extraSmallText;
+        line-height: $infoLineHeight;
+        color: $grayText;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 98%;
+      max-width: 455px;
+      margin: 20px auto;
+      font-size: $bigBtn;
+      line-height: $infoLineHeight;
+      font-weight: $medium;
+      text-decoration: none;
+      color: $white;
+      border-radius: 25px;
+      background: linear-gradient(to left, $btnBlue, $purpul);
+      box-shadow: 0 3px 6px rgba(122, 174, 223, 0.6);
+    }
+
+    &-subtitle {
+      display: block;
+      text-align: center;
+      font-size: $normalText;
+      line-height: $infoLineHeight;
+    }
+  }
+
+  &-items {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 0 40px 0 52px;
+    margin-bottom: -40px;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 210px;
+    margin-bottom: 40px;
+
+    &:nth-child(2n - 1) {
+      margin-right: 40px;
+    }
+  }
+
+  &-imgWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    margin-right: 9px;
+  }
+
+  &-text {
+    display: block;
+    font-size: $bigBtn;
+    line-height: $bannerIconHeight;
+    font-weight: $medium;
+    color: $white;
+  }
+}
+
+.request {
+  padding: 58px 0 70px;
+
+  .bannerBlock-ui-btn {
+    max-width: 456px;
+    margin: 50px 0 0;
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 50px;
+  }
+
+  &-imgWrap {
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &-text {
+    display: block;
+    box-sizing: border-box;
+    width: 70%;
+    max-width: 570px;
+    padding-right: 26px;
+
+    &-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+
+      & + & {
+        margin-top: 50px;
+      }
+    }
+
+    &-int {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      margin-right: 20px;
+      margin-top: -15px;
+      font-size: $intText;
+      line-height: $infoLineHeight;
+      font-weight: $black;
+      color: $int;
+    }
+
+    &-title {
+      display: block;
+      margin-bottom: 8px;
+      font-size: $sliderText;
+      line-height: $infoLineHeight;
+      font-weight: $medium;
+    }
+
+    &-desc {
+      display: block;
+      font-size: $normalText;
+      line-height: $paragrafFooterHeight;
+    }
+  }
+}
+
+.faq {
+  padding-bottom: 97px;
+
+  .sectionTitle {
+    line-height: $bigLineHeight;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .bannerBlock-ui-btn {
+    margin: 40px 0 0;
+  }
+
+  &-imgWrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  &-img {
+    display: block;
+    width: 100%;
+  }
+
+  &-texts {
+    box-sizing: border-box;
+    width: 55%;
+    max-width: 573px;
+    padding-left: 26px;
+  }
+
+  &-textItem {
+    margin-top: 30px;
+
+    &-title {
+      display: block;
+      margin-bottom: 10px;
+      font-size: $bigBtn;
+      line-height: $infoLineHeight;
+      font-weight: $medium;
+    }
+
+    &-desc {
+      font-size: $normalText;
+      line-height: $bannerIconHeight;
+    }
+  }
+}
+
+.services {
+  background: center bottom / auto url(../img/servicesBg.png) no-repeat;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &-img {
+    display: block;
+    width: 100%;
+  }
+
+  &-texts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 55%;
+    max-width: 573px;
+    padding-right: 26px;
+    padding-bottom: 83px;
+
+    &-item {
+      box-sizing: border-box;
+      width: 50%;
+      padding: 0 19px;
+      margin-bottom: 40px;
+
+      p {
+        display: block;
+        text-align: center;
+        font-size: $bigBtn;
+        line-height: $bannerIconHeight;
+        font-weight: $medium;
+        color: $white;
+      }
+    }
+
+    &-iconWrap {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      height: 101px;
+      width: 101px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      border: 1px solid $white;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    max-width: 454px;
+    font-size: $bigBtn;
+    line-height: $infoLineHeight;
+    font-weight: $medium;
+    text-decoration: none;
+    background-color: $white;
+    color: $btnBlue;
+    border-radius: 25px;
+    box-shadow: 0 3px 6px rgba(81, 99, 163, 0.6);
+  }
+}

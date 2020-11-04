@@ -40,4 +40,24 @@
     border: 1px solid $btnBlue;
     border-radius: 15px;
   }
+
+  &-logout {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: $normalText;
+    line-height: $infoLineHeight;
+    font-weight: $medium;
+    color: $btnBlue;
+    text-decoration: none;
+
+    &:before {
+      content: '';
+      display: block;
+      height: 18px;
+      width: 20px;
+      margin-right: 10px;
+      background: center / auto url(../img/out.png) no-repeat;
+    }
+  }
 }

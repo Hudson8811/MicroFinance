@@ -1,0 +1,58 @@
+.about {
+  &-content {
+    p + .howItWorks-heading {
+      margin-top: 50px;
+    }
+
+    .howItWorks-heading + p {
+      margin-top: 20px;
+    }
+
+    .bannerBlock-ui-btn {
+      margin: 40px 0 0;
+    }
+  }
+}
+
+.advantages {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 30px;
+
+  & + & {
+    margin-top: 20px;
+  }
+
+  &-iconWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    width: 85px;
+    margin-right: 18px;
+    border-radius: 50%;
+    border: 1px solid $btnBlue;
+    flex-shrink: 0;
+  }
+
+  &-icon {
+    display: block;
+  }
+
+  &-title {
+    display: block;
+    margin-bottom: 7px;
+    font-size: $bigBtn;
+    line-height: $bannerIconHeight;
+    font-weight: $medium;
+    color: $howWorksTitle;
+  }
+
+  &-desc {
+    display: block;
+    font-size: $normalText;
+    line-height: $bannerIconHeight;
+    color: $grayText;
+  }
+}

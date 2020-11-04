@@ -1,0 +1,63 @@
+.questions {
+  & + & {
+    margin-top: 48px;
+  }
+
+  &-title {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: $bigBtn;
+    line-height: $bannerIconHeight;
+    font-weight: $medium;
+    text-decoration: underline;
+
+    &:before {
+      content: '';
+      display: block;
+      height: 12px;
+      width: 19px;
+      margin-right: 6px;
+      background: center / auto url(../img/arrow.png) no-repeat;
+      flex-shrink: 0;
+    }
+
+    &--active {
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &-content {
+    position: relative;
+    display: none;
+    box-sizing: border-box;
+    padding: 30px 70px 30px 30px;
+    margin-top: 12px;
+    background-color: $faqbg;
+    border-radius: 10px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 36px;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: center/ cover url(../img/arrowSky.png) no-repeat;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+.faq-content {
+  .bannerBlock-ui-btn {
+    margin: 60px 0 0;
+  }
+}
