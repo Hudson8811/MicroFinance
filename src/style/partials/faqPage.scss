@@ -1,6 +1,10 @@
 .questions {
   & + & {
     margin-top: 48px;
+
+    @include for-phone {
+      margin-top: 20px;
+    }
   }
 
   &-title {
@@ -12,6 +16,7 @@
     line-height: $bannerIconHeight;
     font-weight: $medium;
     text-decoration: underline;
+    cursor: pointer;
 
     &:before {
       content: '';
@@ -28,6 +33,11 @@
         transform: rotate(180deg);
       }
     }
+
+    @include for-phone {
+      font-size: $normalText;
+      line-height: $orderLink;
+    }
   }
 
   &-content {
@@ -38,6 +48,11 @@
     margin-top: 12px;
     background-color: $faqbg;
     border-radius: 10px;
+
+    @include for-phone {
+      padding-right: 30px;
+      font-size: $extraSmallText;
+    }
 
     &:before {
       content: '';

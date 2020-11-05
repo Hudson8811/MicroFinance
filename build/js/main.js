@@ -185,4 +185,17 @@ $(document).ready(function () {
         $this.parents('.suggestions-subitem-title').siblings('.suggestions-subitem-content').removeClass('suggestions-subitem-content--active');
       })
       // ПРЕДЛОЖЕНИЯ
+
+
     });
+    // КАПЧА
+    if($('body').hasClass('feedBackPage')){
+      grecaptcha.ready(function () {
+        grecaptcha.execute('6LcxQN8ZAAAAAKR0BtC4JTdkLlh3D7wUpnHSoagd', { action: 'contact' }).then(function (token) {
+            var recaptchaResponse = document.getElementById('recaptchaResponse');
+            recaptchaResponse.value = token;
+        });
+      });
+    }
+
+     // КАПЧА

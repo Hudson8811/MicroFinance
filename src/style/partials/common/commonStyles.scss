@@ -35,6 +35,15 @@ body {
   font-size: $pageTitleText;
   line-height: $infoLineHeight;
   font-weight: $medium;
+
+  @include for-tablet {
+    line-height: 50px;
+  }
+
+  @include for-phone {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .sectionTitle {
@@ -42,6 +51,15 @@ body {
   font-size: $sectionTittleText;
   line-height: $infoLineHeight;
   font-weight: $medium;
+
+  @include for-tablet {
+    line-height: 40px;
+  }
+
+  @include for-phone {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 
 .nowrap {

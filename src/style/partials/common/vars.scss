@@ -47,3 +47,39 @@ $howWorksTitle: #505455;
 $faqbg: #eff7ff;
 $orderLabGray: #88919a;
 $green: #3aa58d;
+
+@mixin for-4k {
+  @media (min-width: 1921px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-smallTablet {
+  @media (max-width: 820px) {
+    @content;
+  }
+}
+
+@mixin for-phone {
+  @media (max-width: 680px) {
+    @content;
+  }
+}
+
+@mixin for-midPhone {
+  @media (max-width: 460px) {
+    @content;
+  }
+}
+
+@mixin for-smallPhone {
+  @media (max-width: 375px) {
+    @content;
+  }
+}

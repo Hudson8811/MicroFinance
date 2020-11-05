@@ -1,0 +1,52 @@
+.feedBack {
+  &-link {
+    font-size: 16px;
+    line-height: 26px;
+    color: $btnBlue;
+  }
+
+  &-capch {
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 100%;
+
+      @include for-phone {
+        display: block;
+      }
+
+      input,
+      button {
+        display: none;
+      }
+
+      .grecaptcha-badge {
+        position: relative !important;
+        bottom: auto !important;
+        right: auto !important;
+        box-shadow: none !important;
+
+        iframe {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .bannerBlock-ui-btn {
+        max-width: 342px;
+        margin: 0;
+        margin-left: 20px;
+
+        @include for-phone {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.order-inputbox-textarea {
+  resize: none;
+  height: 160px;
+}

@@ -21,6 +21,10 @@
     align-items: center;
     width: 248px;
 
+    @include for-smallPhone {
+      margin-right: 20px;
+    }
+
     &-image {
       display: block;
       width: 100%;

@@ -3,6 +3,11 @@
   width: calc(100% - 353px);
   padding-right: 30px;
 
+  @include for-smallTablet {
+    width: 100%;
+    padding-right: 0;
+  }
+
   &-content {
     padding: 61px 0 100px;
 
@@ -10,6 +15,10 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+
+      @include for-smallTablet {
+        flex-direction: column;
+      }
     }
 
     .pageTitle {
@@ -26,6 +35,10 @@
     background: linear-gradient(to left, $btnBlue, $purpul);
     border-radius: 10px;
     border: 1px solid $borderGray2;
+
+    @include for-smallTablet {
+      display: none;
+    }
 
     &-icon {
       display: block;
@@ -67,11 +80,19 @@
     flex-wrap: wrap;
     margin-bottom: -10px;
 
+    @include for-phone {
+      display: block;
+    }
+
     &-item {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       margin-bottom: 10px;
+
+      @include for-phone {
+        width: 100%;
+      }
 
       &:nth-child(1) {
         width: 100%;
@@ -79,6 +100,10 @@
 
       &:last-child {
         margin-left: 30px;
+
+        @include for-phone {
+          margin-left: 0;
+        }
       }
     }
 
@@ -124,5 +149,9 @@
     height: 452px;
     margin-bottom: 35px;
     border: 1px solid $borderGray2;
+
+    @include for-phone {
+      height: 200px;
+    }
   }
 }

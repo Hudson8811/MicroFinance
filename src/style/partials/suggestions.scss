@@ -6,6 +6,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @include for-midPhone {
+      display: block;
+    }
   }
 
   &-link {
@@ -24,6 +28,11 @@
 
     & + & {
       margin-left: 44px;
+
+      @include for-midPhone {
+        margin-left: 0;
+        margin-top: 20px;
+      }
     }
 
     &:before {
@@ -53,7 +62,13 @@
 }
 
 .suggestions {
+  &-wrapper {
+    overflow-x: auto;
+  }
+
   &-item {
+    min-width: 1030px;
+
     &-content {
       display: none;
 

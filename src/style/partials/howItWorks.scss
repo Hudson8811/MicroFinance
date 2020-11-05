@@ -22,6 +22,10 @@
     justify-content: space-between;
     align-items: stretch;
     margin: 36px 0 50px;
+
+    @include for-tablet {
+      display: block;
+    }
   }
 
   &-item {
@@ -30,6 +34,14 @@
     padding: 29px 18px 35px;
     border: 1px solid $btnBlue;
     background-color: $howWorksBg;
+
+    @include for-tablet {
+      width: 100%;
+
+      & + & {
+        margin-top: 20px;
+      }
+    }
   }
 
   &-icon {
@@ -76,12 +88,22 @@
     max-width: 556px;
     margin: 40px 0 -40px;
 
+    @include for-tablet {
+      display: block;
+      margin-bottom: 0;
+    }
+
     &-item {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       width: 50%;
       margin-bottom: 40px;
+
+      @include for-tablet {
+        width: 100%;
+        margin-bottom: 20px;
+      }
     }
 
     &-imgWrap {

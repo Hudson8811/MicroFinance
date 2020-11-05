@@ -2,14 +2,29 @@
   padding-bottom: 76px;
   background: center bottom / 1920px auto url(../img/mainBannerBg.png) no-repeat;
 
+  @include for-4k {
+    background-size: 100% auto;
+  }
+
   .container {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: stretch;
+
+    @include for-smallTablet {
+      display: block;
+    }
   }
 
   &-imageWrapper {
     padding-top: 15px;
+    flex-shrink: 0;
+
+    @include for-tablet {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
   }
 
   &-image {
@@ -22,6 +37,14 @@
     margin-left: 50px;
     width: 80%;
     max-width: 648px;
+
+    @include for-smallTablet {
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 50px;
+      margin: 0;
+      max-width: none;
+    }
   }
 
   &-form {
@@ -32,6 +55,10 @@
     border: 1px solid $borderGray2;
     background-color: $white;
     box-shadow: 0 17px 46px rgba(53, 28, 28, 0.18);
+
+    @include for-smallTablet {
+      padding: 20px;
+    }
 
     &-title {
       display: block;
@@ -97,7 +124,7 @@
       justify-content: center;
       align-items: center;
       height: 50px;
-      width: 98%;
+      width: 100%;
       max-width: 455px;
       margin: 20px auto;
       font-size: $bigBtn;
@@ -126,6 +153,12 @@
     flex-wrap: wrap;
     padding: 0 40px 0 52px;
     margin-bottom: -40px;
+
+    @include for-tablet {
+      display: block;
+      padding: 0;
+      margin-bottom: 0;
+    }
   }
 
   &-item {
@@ -137,6 +170,14 @@
 
     &:nth-child(2n - 1) {
       margin-right: 40px;
+
+      @include for-tablet {
+        margin-right: 0;
+      }
+    }
+
+    @include for-tablet {
+      margin-bottom: 10px;
     }
   }
 
@@ -170,6 +211,10 @@
     justify-content: space-between;
     align-items: stretch;
     margin-top: 50px;
+
+    @include for-smallTablet {
+      display: block;
+    }
   }
 
   &-imgWrap {
@@ -185,6 +230,13 @@
     width: 70%;
     max-width: 570px;
     padding-right: 26px;
+
+    @include for-smallTablet {
+      width: 100%;
+      max-width: none;
+      padding-right: 0;
+      padding-bottom: 50px;
+    }
 
     &-item {
       display: flex;
@@ -236,6 +288,10 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+
+    @include for-smallTablet {
+      flex-direction: column;
+    }
   }
 
   .bannerBlock-ui-btn {
@@ -246,6 +302,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+
+    @include for-smallTablet {
+      order: 1;
+    }
   }
 
   &-img {
@@ -258,6 +318,14 @@
     width: 55%;
     max-width: 573px;
     padding-left: 26px;
+
+    @include for-smallTablet {
+      width: 100%;
+      max-width: none;
+      padding-right: 0;
+      padding-left: 0;
+      padding-bottom: 30px;
+    }
   }
 
   &-textItem {
@@ -281,10 +349,23 @@
 .services {
   background: center bottom / auto url(../img/servicesBg.png) no-repeat;
 
+  @include for-4k {
+    background-size: 100% auto;
+  }
+
+  @include for-tablet {
+    padding-top: 50px;
+    background-size: auto 100%;
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @include for-smallTablet {
+      display: block;
+    }
   }
 
   &-img {
@@ -303,11 +384,26 @@
     padding-right: 26px;
     padding-bottom: 83px;
 
+    @include for-tablet {
+      padding-bottom: 50px;
+    }
+
+    @include for-smallTablet {
+      width: 100%;
+      max-width: none;
+      padding-right: 0;
+    }
+
     &-item {
       box-sizing: border-box;
       width: 50%;
       padding: 0 19px;
       margin-bottom: 40px;
+
+      @include for-tablet {
+        width: 100%;
+        padding: 0;
+      }
 
       p {
         display: block;

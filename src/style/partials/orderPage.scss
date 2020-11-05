@@ -5,6 +5,13 @@
   padding: 58px 0 100px;
   margin: 0 auto;
 
+  @include for-phone {
+    .bannerBlock-ui-slider {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
   .bannerBlock-ui-inputWrapper {
     max-width: 545px;
     margin: 40px auto 34px;
@@ -84,21 +91,40 @@
 
     &-50 {
       width: calc(50% - 15px);
+
+      @include for-phone {
+        width: 100%;
+      }
     }
 
     &-33 {
       width: calc(33.333333% - 34px / 3);
+
+      @include for-phone {
+        width: 100%;
+      }
     }
 
     &-title {
       font-size: $normalText;
       line-height: $infoLineHeight;
+
+      @include for-smallTablet {
+        font-size: $extraSmallText;
+      }
     }
 
     &-subtitle {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       font-size: $extraSmallText2;
       line-height: $infoLineHeight;
       color: $orderLabGray;
+
+      @include for-smallTablet {
+        font-size: 10px;
+      }
     }
   }
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Обратная связь</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    
+  </head>
+
+  <body class="contactsPage feedBackPage">
+    <div class="wrapper">
+     //= common/header
+      <main class="main">
+        <div class="contacts-content">
+          <div class="container">
+            <div class="contacts howItWorks-content feedBack-content">
+              <h2 class="pageTitle">Обратная связь</h2>
+
+              <p>Наши специалисты готовы оказать вам квалифицированную помощь в получении микрокредита.</p>
+              <p>Нам важно, чтобы у вас осталось положительное впечатление от общения с нами. Мы всегда рады вам помочь. Возможно, ответ на Ваш вопрос уже есть в разделе <a href="#" class="feedBack-link">Помощь</a> . Для отмены подписки необходимо заполнить все поля формы на странице <a href="#" class="feedBack-link"> отмена подписки на сервис.</a></p>
+
+
+              <div class="order-form">
+  
+                <label class="order-label order-label-50">
+                  <span class="order-label-title">Ваше Имя</span>
+                  <input type="text" class="order-inputbox order-inputbox-phone">
+                </label>
+  
+                <label class="order-label order-label-50">
+                  <span class="order-label-title">Ваш email</span>
+                  <input type="email" class="order-inputbox">
+                </label>
+
+                <label class="order-label">
+                  <span class="order-label-title">Сообщение</span>
+                  <textarea class="order-inputbox order-inputbox-textarea"></textarea>
+                </label>
+  
+                <div class="feedBack-capch-wrap">
+                  <div class="feedBack-capch">
+                    <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                    <button class="g-recaptcha" 
+                      data-sitekey="6LcxQN8ZAAAAAKR0BtC4JTdkLlh3D7wUpnHSoagd" 
+                      data-callback='onSubmit' 
+                      data-action='submit'>Submit
+                    </button>
+                  </div>
+                  <a href="#" class="bannerBlock-ui-btn btn">Отправить</a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="contacts-bac">
+              <img src="img/card.png" alt="img" class="contacts-bac-icon">
+              <span class="contacts-bac-title">Единая заявка на микрокредит</span>
+              <a href="#" class="contacts-bac-link btn">Оформить заявку</a>
+            </div>
+
+          </div>
+        </div>
+      </main>
+      //= common/footer
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcxQN8ZAAAAAKR0BtC4JTdkLlh3D7wUpnHSoagd"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
