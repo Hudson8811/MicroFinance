@@ -50,3 +50,26 @@
   resize: none;
   height: 160px;
 }
+
+.unsubscribe-content {
+  @include for-tablet {
+    .order-form {
+      display: block;
+
+      .order-label-50 {
+        width: 100%;
+      }
+
+      .feedBack-capch-wrap {
+        display: block;
+
+        .bannerBlock-ui-btn {
+          width: 100%;
+          max-width: none;
+          margin-top: 30px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
